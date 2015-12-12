@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,800' rel='stylesheet' type='text/css'>
+  <script src="jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="application.js"></script>
+  <title>Landing.Jobs Yourfit App</title>
+</head>
+<body>
+  
+<div class="content">
+  <div class="undernav">
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo-standard_white.svg">
+      </div>
+    </div>
+  </div>
+  <div class="nav">
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo-standard_white.svg">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+  <div class="boxcontainer">
+    <div class="box">
+      <div class="title">
+        <p>Challenge</p>
+        <div class="calculator">
+          <p id="challenge"></p>
+          <p id="percent">%</p>
+        </div>
+      </div>
+      <div class="hidden">  
+        <div class="row0">
+          <div>Weight</div>
+          <div>Points</div>
+        </div>
+        <div class="row1">
+          <select class="weight css-select" id="a1" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+          <p>Roles & Responsability</p>
+          <select class="points css-select" id="b1" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+        <div class="row1">
+          <select class="weight css-select" id="a2" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+          <p>Teams & Leadership</p>
+          <select class="points css-select" id="b2" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+        <div class="row1">
+          <select class="weight css-select" id="a3" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+          <p>Learning Opportunities</p>
+          <select class="points css-select" id="b3" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+        <div class="row1">
+          <select class="weight css-select" id="a4" onchange="myFunction()"> css-select
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+          <p>Growth Opportunities</p>
+          <select class="points css-select" id="b4" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="title">
+        <p>Environment</p>
+        <div class="calculator">
+          <p id="environment"></p>
+          <p id="percent">%</p>
+        </div>
+      </div>
+      <div class="hidden">  
+        <div class="row0">
+          <div>Weight</div>
+          <div>Points</div>
+        </div>
+        <div class="row1">
+          <select class="weight css-select" id="c1" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+          <p>Office & Location</p>
+          <select class="points css-select" id="d1" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+        <div class="row1">
+          <select class="weight css-select" id="c2" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+          <p>Culture & Vision</p>
+          <select class="points css-select" id="d2" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+        <div class="row1">
+          <select class="weight css-select" id="c3" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+          <p>Flexibility</p>
+          <select class="points css-select" id="d3" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+        <div class="row1">
+          <select class="weight css-select" id="c4" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+          <p>Company Type</p>
+          <select class="points css-select" id="d4" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="boxcontainer">
+    <div class="box">
+      <div class="title">
+        <p>Economics</p>
+        <div class="calculator">
+          <p id="economics"></p>
+          <p id="percent">%</p>
+        </div>
+      </div>
+      <div class="hidden">  
+        <div class="row0">
+          <div>Weight</div>
+          <div>Points</div>
+        </div>
+        <div class="row1">
+          <select class="weight css-select" id="e1" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+          <p>Fixed Salary</p>
+          <select class="points css-select" id="f1" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+        <div class="row1">
+          <select class="weight css-select" id="e2" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+          <p>Variable Salary</p>
+          <select class="points css-select" id="f2" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+        <div class="row1">
+          <select class="weight css-select" id="e3" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+          <p>Perks & Benefits</p>
+          <select class="points css-select" id="f3" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+        <div class="row1">
+          <select class="weight css-select" id="e4" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+          <p>Equity Compensation</p>
+          <select class="points css-select" id="f4" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="title">
+        <p>Competencies</p>
+        <div class="calculator">
+          <p id="competencies"></p>
+          <p id="percent">%</p>
+        </div>
+      </div>
+      <div class="hidden">  
+        <div class="row0">
+          <div>Weight</div>
+          <div>Points</div>
+        </div>
+        <div class="row1">
+          <select class="weight css-select" id="g1" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+          <p>Skills</p>
+          <select class="points css-select" id="h1" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+        <div class="row1">
+          <select class="weight css-select" id="g2" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+          <p>Work Experience</p>
+          <select class="points css-select" id="h2" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+        <div class="row1">
+          <select class="weight css-select" id="g3" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+          <p>Life Journey</p>
+          <select class="points css-select" id="h3" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+        <div class="row1">
+          <select class="weight css-select" id="g4" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+          <p>Achievements</p>
+          <select class="points css-select" id="h4" onchange="myFunction()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected="selected">3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="totalbar">
+    <div class="fitbar"></div>
+    <div class="total">
+      <p>Total Fit</p>
+      <div class="calculator1">
+        <p id="fit"></p>
+        <p id="percent">%</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  
+      
+  <script type="text/javascript">
+    function myFunction() {
+      var a1 = Number(document.getElementById("a1").value)
+          a2 = Number(document.getElementById("a2").value)
+          a3 = Number(document.getElementById("a3").value)
+          a4 = Number(document.getElementById("a4").value)
+          b1 = Number(document.getElementById("b1").value)
+          b2 = Number(document.getElementById("b2").value)
+          b3 = Number(document.getElementById("b3").value)
+          b4 = Number(document.getElementById("b4").value)
+          c1 = Number(document.getElementById("c1").value)
+          c2 = Number(document.getElementById("c2").value)
+          c3 = Number(document.getElementById("c3").value)
+          c4 = Number(document.getElementById("c4").value)
+          d1 = Number(document.getElementById("d1").value)
+          d2 = Number(document.getElementById("d2").value)
+          d3 = Number(document.getElementById("d3").value)
+          d4 = Number(document.getElementById("d4").value)
+          e1 = Number(document.getElementById("e1").value)
+          e2 = Number(document.getElementById("e2").value)
+          e3 = Number(document.getElementById("e3").value)
+          e4 = Number(document.getElementById("e4").value)
+          f1 = Number(document.getElementById("f1").value)
+          f2 = Number(document.getElementById("f2").value)
+          f3 = Number(document.getElementById("f3").value)
+          f4 = Number(document.getElementById("f4").value)
+          g1 = Number(document.getElementById("g1").value)
+          g2 = Number(document.getElementById("g2").value)
+          g3 = Number(document.getElementById("g3").value)
+          g4 = Number(document.getElementById("g4").value)
+          h1 = Number(document.getElementById("h1").value)
+          h2 = Number(document.getElementById("h2").value)
+          h3 = Number(document.getElementById("h3").value)
+          h4 = Number(document.getElementById("h4").value)
+          sum1 = (a1+a2+a3+a4)
+          product1 = (a1*b1)+(a2*b2)+(a3*b3)+(a4*b4)
+          total1 = (sum1*5)==0 ? 0 :(product1*100)/(sum1*5)
+          sum2 = (c1+c2+c3+c4)
+          product2 = (c1*d1)+(c2*d2)+(c3*d3)+(c4*d4)
+          total2 = (sum2*5)==0 ? 0 :(product2*100)/(sum2*5)
+          sum3 = (e1+e2+e3+e4)
+          product3 = (e1*f1)+(e2*f2)+(e3*f3)+(e4*f4)
+          total3 = (sum3*5)==0 ? 0 :(product3*100)/(sum3*5)  
+          sum4 = (g1+g2+g3+g4)	
+          product4 = (g1*h1)+(g2*h2)+(g3*h3)+(g4*h4)
+          total4 = (sum4*5)==0 ? 0 :(product4*100)/(sum4*5)
+          totalA = (sum1+sum2+sum3+sum4) == 0 ? 0 :((total1*sum1)+(total2*sum2)+(total3*sum3)+(total4*sum4))/(sum1+sum2+sum3+sum4)
+		  document.getElementById("challenge").innerHTML = total1.toFixed(2);
+		  document.getElementById("environment").innerHTML = total2.toFixed(2);
+		  document.getElementById("economics").innerHTML = total3.toFixed(2);
+		  document.getElementById("competencies").innerHTML = total4.toFixed(2);
+		  document.getElementById("fit").innerHTML = totalA.toFixed(2);
+    }
+    </script>
+</body>
+</html>
